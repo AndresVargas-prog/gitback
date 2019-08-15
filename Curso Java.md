@@ -1,21 +1,23 @@
                                                               ¿QUE ES JAVA?
 
-	Java es un lenguaje de programación con el que podemos realizar cualquier tipo de programa. En la actualidad es un lenguaje
-	muy extendido y cada vez cobra más importancia tanto en el ámbito de Internet como en la informática en general. 
-	Está desarrollado por la compañía Sun Microsystems con gran dedicación y siempre enfocado a cubrir las necesidades tecnológicas
-	más punteras.
+	Java es un lenguaje de programación con el que podemos realizar cualquier tipo de programa. En la actualidad es 
+	un lenguaje muy extendido y cada vez cobra más importancia tanto en el ámbito de Internet como en la informática 
+	en general. Está desarrollado por la compañía Sun Microsystems con gran dedicación y siempre enfocado a cubrir 
+	las necesidades tecnológicas más punteras.
 
-	Una de las principales características por las que Java se ha hecho muy famoso es que es un lenguaje independiente de la 
-	plataforma. Eso quiere decir que si hacemos un programa en Java podrá funcionar en cualquier ordenador del mercado. Es una 
-	ventaja significativa para los desarrolladores de software, pues antes tenían que hacer un programa para cada sistema operativo, 
-	por ejemplo Windows, Linux, Apple, etc. Esto lo consigue porque se ha creado una Máquina de Java para cada sistema que hace de 
-	puente entre el sistema operativo y el programa de Java y posibilita que este último se entienda perfectamente.
+	Una de las principales características por las que Java se ha hecho muy famoso es que es un lenguaje 
+	independiente de la plataforma. Eso quiere decir que si hacemos un programa en Java podrá funcionar en cualquier
+	ordenador del mercado. Es una ventaja significativa para los desarrolladores de software, pues antes tenían que
+	hacer un programa para cada sistema operativo, por ejemplo Windows, Linux, Apple, etc. Esto lo consigue porque 
+	se ha creado una Máquina de Java para cada sistema que hace de puente entre el sistema operativo y el programa 
+	de Java y posibilita que este último se entienda perfectamente.
 
-	La independencia de plataforma es una de las razones por las que Java es interesante para Internet, ya que muchas personas deben 
-	tener acceso con ordenadores distintos. Pero no se queda ahí, Java está desarrollándose incluso para distintos tipos de 
-	dispositivos además del ordenador como móviles, agendas y en general para cualquier cosa que se le ocurra a la 
+	La independencia de plataforma es una de las razones por las que Java es interesante para Internet, ya que 
+	muchas personas deben tener acceso con ordenadores distintos. Pero no se queda ahí, Java está desarrollándose
+	incluso para distintos tipos de dispositivos además del ordenador como móviles, agendas y en general para 
+	cualquier cosa que se le ocurra a la industria.
 
-------------------------------------------------------------- tipos de datos ----------------------------------------------------------
+        -------------------------------------------------- tipos de datos
 	 
 	datos pritivos( No aceptan Valor Null)
 	tipo(Tamaño)
@@ -24,31 +26,32 @@
 	Integer
 
 	
-------------------------------------------------------------- declarar constantes  
+      --------------------------------------------------------- declarar constantes  
 	Este tipo de variables, es una variable la cual no se modificara en el resto del programa
            
 				Final int entero = 0; // Final palabra clave para declarar constante 
 
-------------------------------------------------------------- Entrada de Datos()
+      ------------------------------------------------------- Entrada de Datos()
 	
 	import java.until.Scanner
 		main
-			Scanner entrada  = new Scanner(System.in);
-			int numero;
-			string Cadena;
+		Scanner entrada  = new Scanner(System.in);
+		int numero;
+		string Cadena;
 
-			System.out.println("Digite un numero")
+		System.out.println("Digite un numero")
 	//Entrada
-		Entero	numero = entrada.nextInt();
-		Float	numero = entrada.nextFloat(); // Al ingresar tenemos que ponerlo 14,4 con coma ya que el punto te dara un error
-		cadena	cadena = entrada.next(); // leera la proxima palabra hasta que encuentre un espacio
-			cadena = entrada.next().charAt(0);// leera el primer caracter de la siguiente palabra que encuentre
-			cadena = entrada.nextLine(); // leera la proxima linea de palabras esto hasta que encuentre un enter o salto de
-							linea
+	Entero	numero = entrada.nextInt();
+	Float	numero = entrada.nextFloat(); // Al ingresar tenemos que ponerlo 14,4 con coma ya que el punto te
+						dara un error
+	cadena	cadena = entrada.next(); // leera la proxima palabra hasta que encuentre un espacio
+		cadena = entrada.next().charAt(0);// leera el primer caracter de la siguiente palabra que encuentre
+		cadena = entrada.nextLine(); // leera la proxima linea de palabras esto hasta que encuentre un enter
+						o salto de linea
 	//Salida
-			System.out.println("El Numero Es: "+ numero)
+		System.out.println("El Numero Es: "+ numero)
 
-Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los datos requeridos
+	Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los datos requeridos
 
 	import javax.Swing.JOptionPane;
 		main
@@ -67,7 +70,7 @@ Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los 
 			JOptionPane.ShowMessageDialog(null. "El Decimal Es: "+ decimal);
 			JOptionPane.ShowMessageDialog(null. "La letra Es: "+ letra);
 
-------------------------------------------------------------- Combinacion de operadores
+     ------------------------------------------------------- Combinacion de operadores
 
 	int numero = 5;
 
@@ -77,23 +80,23 @@ Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los 
 	numero = numero * 5; //numero *= 5; multi
 	numero = numero % 5; //numero %= 5; residuo
 
-------------------------------------------------------------- sufijo prefijo
+    --------------------------------------------------------- sufijo prefijo
 
 	int x= 5, y;
 
 	Sufujo ->  y = x++; primero se le asigna el valor de x a y, y despues se incrementa x
 	Prefijo -> y = --x; primero se incrementa x y despues de asignara x a y
 
-------------------------------------------------------------- Condicionales
+    --------------------------------------------------------- Condicionales
 
-	Los condicionales son estructuras de codigo las cuales nos ayudan a la toma de decisiones, para esto en java existen los 
-	Condicionales: 
+	Los condicionales son estructuras de codigo las cuales nos ayudan a la toma de decisiones, para esto en java 
+	existen los Condicionales: 
 
 		- if(condicion){} -Si la condicion se cumple se ejecuta el codigo de adentro
 		- else if(){} si la condicion del primer if no se cumple, pasa a evaluar la del else if
 		- else{} Si no se cumple el codigo del if se ejecuta el cogido de dentro
 
-------------------------------------------------------------- Operador ternero
+    --------------------------------------------------------- Operador ternero
 
 	sintaxis 
 		valor = (condicion) ? valor1 : valor2
@@ -101,17 +104,17 @@ Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los 
 		si la condicion se cumple valor = valor1
 		si la condicion no se cumple valor = valor2
 
-------------------------------------------------------------- Clase Math
+     --------------------------------------------------------- Clase Math
 
 	Esta clase tiene muchas funciones cib las cuales podemos manejas los numeros de manera optima por ejemplo
 	podemos sacar raiz cuandrada de un numero( Math.sqrt()), elevar un numero a una potencia(Math.pow(nume, Exp)), 
 	generar un numero aleatorio(Math.Random() esta clase retorna un numero de entre 0 y 1 por lo que tenemos que 
 	multiplicarlo por 10 para que nos retorne uno de 0 a 10) 
 
-------------------------------------------------------------- Arreglos
+    -------------------------------------------------------- Arreglos
 
-   Un array en java es una estructura de datos que nos permite almacenar un conjunto de datos de un mismo tipo. 
-   El tamaño de los arrays se declara en un primer momento y no se puede cambiar luego durante la ejecucion del programa
+    Un array en java es una estructura de datos que nos permite almacenar un conjunto de datos de un mismo tipo. 
+    El tamaño de los arrays se declara en un primer momento y no se puede cambiar luego durante la ejecucion del programa
 
 							      sintaxis
 						tipo variable[] Nombre = new tipo variable[]
@@ -122,11 +125,12 @@ Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los 
 								Ejemplo
 				Arreglo : String[] nombres = {"Alejandro","Maria","Luisa","Juan","Luis"};
 				metodo for each 
-			for(String i:nombres){System.out.println("nombres:"+i);} esto imprimira todos los nombres que hay en el arreglo
+			for(String i:nombres){System.out.println("nombres:"+i);} 
+			//esto imprimira todos los nombres que hay en el arreglo
 
 
 
-------------------------------------------------------------- Busqueda Secuencial
+     --------------------------------------------------------- Busqueda Secuencial
 
 	El método de búsqueda secuencial consiste en ir comparando el elemento o criterio de búsqueda con cada uno  de los elementos 
 	en el arreglo, esto se hace recorriendo el arreglo y deteniéndose en cada elemento y hacer la comparación, en caso de ser 
@@ -145,7 +149,7 @@ Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los 
 				return posicion;
 			}
 	
-------------------------------------------------------------- Busqueda Binaria
+    --------------------------------------------------------- Busqueda Binaria
 
 	Esta busqueda se basa en dividir el arreglo en el que se buscara un determinado dato y atravez de comparaciones ir
 	partiendo  una y otra vez el arreglo hasta que el numero se encuentre o se terminen las posiciones donde buscar
@@ -164,7 +168,7 @@ Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los 
 						return -1;
 					}
 
--------------------------------------------------------------  Ordenamiento Burbuja --
+     ---------------------------------------------------------  Ordenamiento Burbuja --
     Es un sensillo algoritmo de ordenamiento. Funciona revisando cada elemento de la lista que va a ser ordenada con el siguiente, 
     intercambiandolos de posicion si estan en desorden. Es necesario revisar varias veces toda la lista hasta que no necesiten mas 
     intercambios, lo cual significa que la lista esta ordenada.
@@ -183,7 +187,7 @@ Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los 
 						    }
 					}
 
-------------------------------------------------------------- Metodo por incersion  --
+        -------------------------------------------------------- Metodo por incersion  --
 
  	Este trabaja comparando el numero con el que esta en la izquierda si es mayor el que tiene a la izq cambia y se vuelve a 
 	comparar hasta que no haya mas numeros en la izq.
@@ -208,16 +212,17 @@ Entrada de datos() por jOptionsPane - Crea pequeñas ventanas para ingresar los 
 							a[pos] = temp;
 						    }
 
-------------------------------------------------------------- Matrices
+     ------------------------------------------------------- Matrices
 
-    Una matriz en un arreglo bidimencional, necesita dos indices para acceder a sus elementos. Graficamente podemos representar una matriz como una tabla de n filas y m columnas cuyos elementos son todos del mismo tipo.
+    Una matriz en un arreglo bidimencional, necesita dos indices para acceder a sus elementos. Graficamente podemos representar
+    una matriz como una tabla de n filas y m columnas cuyos elementos son todos del mismo tipo.
 
-			Sintaxis de una matriz
-		int a[][] = new int[x][y]; x,y = numero de filas y columnas
+					Sintaxis de una matriz
+				int a[][] = new int[x][y]; x,y = numero de filas y columnas
 
-_______________________________________________________________________________________________________________________________________
+      _______________________________________________________________________________________________________________________________
 
--------------------------------------------------- Programacion Orientada A Objetos  --
+     ---------------------------------------------- Programacion Orientada A Objetos  --
         La programacion Orientada a objetos (POO) es una forma de programar, mas cercana a como expresariamos las cosas en la vida
 	real que otros tipos de programacion.
         
@@ -228,13 +233,13 @@ ________________________________________________________________________________
 
         Una clase es un conjunto de objetos con caracteristicas similares
 
--------------------------------------------------------- Metdos y Objetos
+      --------------------------------------------------- Metdos y Objetos
 
 		- Un Metodo es :  una accion o comportamiento de los objetos 
 		- Parametros es : una declaracion de variable u objeto
 		- Argumentos es : un valor que se envia
 
--------------------------------------------------------- Metodo Constructor  --
+     -------------------------------------------------- Metodo Constructor  --
     
 	Cuando se crea un objeto ocurren  cosas:
         	+ Se asigna memoria para el objeto.
@@ -253,7 +258,7 @@ ________________________________________________________________________________
 			this.edad = edad;	// this.edad es el atributo y edad es el parametro que le pasamos
 	        }
     
-------------------------------- Sobrecarga de metodos Normales y Metodos constructores 
+       --------------------------- Sobrecarga de metodos Normales y Metodos constructores 
   
      La sobrecarga de metodos es una tecnica en la cual se puede declarar varias veces un metodo pero cada uno de estos tiene que
      estar diferenciado por alguna cosa, pueden llegar a llamarse igual pero sus parametros deben de ser diferentes
@@ -267,13 +272,13 @@ ________________________________________________________________________________
 					System.out.println("Hola soy Abraham y tengo" + edad+ " Años");}
 
 
-   Ambos se llaman igual pero uno tiene parametros y otro no por lo cual a la hora de llamarlo se decidira cual es el que llamara:
+    Ambos se llaman igual pero uno tiene parametros y otro no por lo cual a la hora de llamarlo se decidira cual es el que llamara:
    
 				Persona p1 = new Persona(21);
                     			    o  
 			        Persona p2 = new Persona();
 
-	Java diferencia la sobrecarga de metodos mediante los parametros no por el tipo de retorno ya que esto crearia Ambigedad al 	
+	Java diferencia la sobrecarga de metodos mediante los parametros no por el tipo de retorno ya que esto crearia Ambigedad al 
 	llamar a uno de los metodos
 
 	Ejemplo:
@@ -281,14 +286,14 @@ ________________________________________________________________________________
 		public void suma(int n1, int n2){}
 		public int suma(int n1, int n2){return suma;}
 		
-		al llamarlos no sabemos cual metodo es el que mandaria a llamar por esto es que ni java nos permite declarar 2 metodos 
-		con parametros iguales, no importa si los metodos tiene diferente tipo de retorno:
+		al llamarlos no sabemos cual metodo es el que mandaria a llamar por esto es que ni java nos permite declarar 
+		2 metodos con parametros iguales, no importa si los metodos tiene diferente tipo de retorno:
 		
 	// Llamada de los metodos
 		suma(n1,n2);
 		suma(n1,n2);
 
-------------------------------------------------------- Miembros Estaticos --
+     -------------------------------------------------- Miembros Estaticos --
 
     	Estos datos ya no pertenesen a los objetos, es decir; los objetos ya no pueden modificar el dato individualmente, por lo que si 
 	un objeto cual sea incluso uno nuevo cambia el valor de la variable estatica este valor cambiara para los otros objetos.
@@ -313,7 +318,7 @@ ________________________________________________________________________________
                         		System.out.println("La Suma es: " + Main.suma(3,4));
 
 
----------------------------------------------------  Modificadores de Acceso  --
+     -----------------------------------------------  Modificadores de Acceso  --
 
      Al ponerle el modificador public este puede ser usado en todas las clases de cualquier paquete, pero si no ponemos el modificador 
      se podra usar en todas las clases pero solo del paquete donde esta la clase que lo contiene.
@@ -333,22 +338,23 @@ ________________________________________________________________________________
      El acceso protegido suele aplicarse a métodos o constructores, pero preferiblemente no a campos, para evitar debilitar el 
      encapsulamiento. En ocasiones puntuales sí resulta de interés declarar campos con acceso protegido.	
 
----------------------------------------------------  Encapsulamiento --
+     ----------------------------------------------  Encapsulamiento --
 
      El encapsulamiento se encarga de ocultar nustros atributos y metodos de las demas clases Esto nos ayuda a que no cualquier 
      persona pueda cambias los datos a su antojo si no que al estar encapsulados estos estan protegidos, y asi podemos prevenir 
      que puedan meter un dato erroneo y asi provocar un error fatal
 
------------------------------------------------ Metodos Accesores (Getters y Setters) --
+     ---------------------------------------- Metodos Accesores (Getters y Setters) --
 
      Los setters y getters son metodos que podemos crear para poder accesar a los datos encapsulados en la clase principal 
      
 				        	- setters establese datos
        						- getters obtiene datos
 
---------------------------------------------------- Herencia     
+     --------------------------------------------- Herencia     
     
-    La herencia es una forma de reutilizacion de software en la que se crea una nueva clas al absorber los miembros de una ya existente.
+    La herencia es una forma de reutilizacion de software en la que se crea una nueva clas al absorber los miembros de una ya 
+    existente.
      
 						   Ejemplo
 
@@ -364,8 +370,8 @@ ________________________________________________________________________________
 						+ getAoellido():String      + significa que es publica
 						+ getEdad():int
 	
-	El hacer una clase heredada esta tendra todos los atributos y metodos de la superclase o clase padre o mas simple de la clase 
-	que se deriva
+	El hacer una clase heredada esta tendra todos los atributos y metodos de la superclase o clase padre o mas simple de
+	la clase que se deriva
 
 					Estudiante  (Clase Hija o SubClase)
 					//atributos
@@ -387,7 +393,7 @@ ________________________________________________________________________________
 					- Atributos - codigoEstudiante, notaFinal
 					- Metodos -   mostrarDatos
 
----------------------------------------------------  SobreEscritura  --
+     -----------------------------------------------  SobreEscritura  --
     
 	El sobreescribir un metodo, significa que para cada clase hija el metodo puede ser diferente siempre y cuando le indiquemos 
 	lo que modifiquamos 
@@ -415,7 +421,7 @@ ________________________________________________________________________________
 					Vaca vaca = new Vaca(); vaca.comer(); = "Estoy comiendo"                                    
 
 
----------------------------------------------------  Metodos y Clases Abstractas
+     ----------------------------------------------  Metodos y Clases Abstractas
    
       --  Clases y Metodos Abstractos --
 
@@ -442,7 +448,7 @@ ________________________________________________________________________________
 
 	La declaración de que una clase es abstracta se hace con la sintaxis public abstract class NombreDeLaClase { … }.
 
----------------------------------------------------  Polimorfismo
+       ----------------------------------------------  Polimorfismo
 
 	+ En una relacion de tipo heremcia, un objeto de la superclase puede almacenar un objeto de cualquiera de sus subclases
 
@@ -454,7 +460,7 @@ ________________________________________________________________________________
       por lo que el polimorfismo son las muchas formas que puede tomar un objeto
 
 		Ejemplo: 
----------------------------------------------------  Diagrama UML para el ejemplo
+       ----------------------------------------------  Diagrama UML para el ejemplo
 			    UML
 						Vehiculo    //Clase Padre
 						
@@ -468,9 +474,9 @@ ________________________________________________________________________________
 			   VehiculoTurismo            VehiculoDeportivo           VehiculoFurgoneta
 			-numeroPuertas: int            -cilindrada: int            -carga: int
 			+ mostrarDatos(): String       + mostrarDatos(): String    + mostrarDatos(): String
----------------------------------------------------------------------------------------------------------------------------------------
+      ------------------------------------------------------------------------------------------------------------------------------
 
-podemos crear un objeto de vehiculo     
+	podemos crear un objeto de vehiculo     
 
         			Vehiculo miVehiculo = new Vehiculo(matricula,marca,modelo);
 
@@ -491,7 +497,7 @@ podemos crear un objeto de vehiculo
 		misVehiculos[2] = new VehiculoDeportivo("GTX447","Audi","GTR-558",8);  instanciado por una de sus hijas
 		misVehiculos[3] = new VehiculoFurgoneta("FR4457","Toyota","C450",50);
 
----------------------------------------------------  Tratamiento de Excepciones
+       -----------------------------------------------  Tratamiento de Excepciones
 
 	Que son las excepciones?
 	Cuando un programa java viola las restricciones semanticas del lenguaje(se produce un error) la maquina virtual java comunica 
@@ -505,7 +511,7 @@ podemos crear un objeto de vehiculo
 	con el disco duro, o con la falta de un archivo que fue borrado por una persona o programa externo, estas excepciones java 
 	nos obliga a evadirla o solucionarla con el metodo try Catch o indicando las posibles excepciones al comenzar el main
 
-Ejemplo: 
+	Ejemplo: 
 
 	se genera porque el archivo no existe o se ah borrado/*
     
@@ -521,7 +527,7 @@ Ejemplo:
 	programadores a lo largo del desarrollo del programa, estos errores son, debido a posibles errores aritmeticos como dividir 
 	entre 0, o tambien el guardar un dato de un tipo en otro de un tipo diferente como guardar un string en un entero.
 
-Ejemplo:
+	Ejemplo:
 
 				Dividir entre 0
 					    int num1 = 5, num2 = 0;

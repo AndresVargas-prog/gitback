@@ -339,12 +339,14 @@ ________________________________________________________________________________
      proyecto, este dato solo se podra utilizar en la clase en la que se declaro en este caso solo en esta clase 
      se puede usar.
 
-				                        private int date;
+				                        private int edad;
 
      El modificador protected hace que las variables puedan ser accedidas por los miembros de la clase ademas de
      las clases hijas. El modificador de acceso protected puede aplicarse a todos los miembros de una clase,
      es decir; tanto a campos como a métodos o constructores. En el caso de métodos o constructores protegidos,
      estos serán visibles/utilizables por las subclases y otras clases del mismo package. 
+     	
+							protected int edad;
      
      El acceso protegido suele aplicarse a métodos o constructores, pero preferiblemente no a campos, para evitar
      debilitar el encapsulamiento. En ocasiones puntuales sí resulta de interés declarar campos con acceso 
@@ -405,6 +407,38 @@ ________________________________________________________________________________
 
 					- Atributos - codigoEstudiante, notaFinal
 					- Metodos -   mostrarDatos
+
+---------------------------------------------------  Clases y Metodos Final
+	
+	Las clases Final son clases las cuales restringen la opcion de crear mas clases hijas, por ejemplo hay una 
+	superclase la cual tiene 2 hijas, pero nosotros queremos que estas ya no puedan tener mas hijas, para esto 
+	las hacemos clases Final y ya no se podra hacer mas herencia de estas clases.
+	
+			Ejemplo:
+				final public class aplicacion(){//Al declarar la clase como final esta ya no podra
+					public void dibujar(){}    tener clases hijas por lo que la clase "movil
+				}				   no podria ser creada.
+				public class movil extends aplicacion(){
+					public void dibujar(){}
+				}
+				
+	Los metodos Final son metodos los cuales no permiten que en las clases hijas apartir de donde ponemos el 
+	metodo final, no puedan crear metodos con el mismo nombre.
+	
+			Ejemplo:
+				public class aplicacion(){
+					final public void dibujar(){}// al ponerle final ya no puede crear un  
+					}				metodo con este nombre en la clases hijas
+									de la clase aplicacion, por lo que en la
+									clase movil no permitiria crear el metodo
+				public class movil() extends aplicacion{
+					public void dibujar(){}
+					}
+				teniendo 1 metodo dibujar en la superclase y otro llamado igual pero en una clase 
+				hija de esta, al declarar el primer metodo dibujar como final, en las clases hijas
+				apartir de esta, ya no podran crear un metodo llamado dibujar, por lo que en este
+				caso el segundo metodo dibujar no podria ser creado 
+
 
 ---------------------------------------------------  SobreEscritura  --
     

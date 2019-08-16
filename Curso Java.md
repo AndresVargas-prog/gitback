@@ -407,6 +407,72 @@ ________________________________________________________________________________
 
 					- Atributos - codigoEstudiante, notaFinal
 					- Metodos -   mostrarDatos
+					
+--------------------------------------------------- Interfaces
+
+	No hay que confundirnos con el consepto de interface, ya que existen interfaces graficas las cuales son
+	grafos y por otro lado estan otro tipo de interfaces las cuales son las que vamos a utilizar en este 
+	caso para simular la herencia multiple.
+	
+			-Permite simular la Herencia multiple
+			-La interface solo es public o default
+			- Todos sus metodos son abstractos
+			- Todos los atributos son Final
+			
+		Sintaxis 
+				public interface persona(){	// esta es como una clase comun solo que 
+								la utilizamos para diferetes cosas
+					public abstract void hablar();// todos sus metodos son abstractos 
+					} 
+
+--------------------------------------------------- Herencia Multiple
+	
+	La herencia multiple hace referencia a la carecteristica de los lenguajes de programacion orientada a objetos
+	en la que una clase puede heredar atributos y metodos de mas de una superclase.
+	
+	La herencia multiple en si no se puede llevar a cabo en java, sin embargo esta se puede simular con la ayuda
+	de interfaces
+		
+		Ejemplo: 	//Interface 1					|
+				public interface Persona(){			|
+					public abstract void hablar();		|
+					}					|
+										|
+				//Interface 2					|  son archivos 
+				public interface Musico() extends Persona{	|  diferentes 
+					public abstract void tocar();		|
+				}						|
+										|
+				//Interface 3					|
+				public interface Estudiante(){			|
+					public abstract void estudiar();	|
+				}						|
+				
+				//Clase 1, en esta clase implementaremmos los metodos abstractos de las 
+					interfaces 
+				public class MusicoEstudiante implements Musico, Estudiante(){
+					public void hablar(){
+						System.out.println("Estoy hablado español");
+						}
+					public void tocar(){
+						System.out.println("Estoy Tocando La Guitarra");
+						}
+					public void estudiar(){
+						System.out.println("Estoy Estudiando Programacion");
+						}
+				}
+				//Clase 2, en esta clase crearemos un objeto de la primera clase para llamar a
+				los metodos 
+				public class principal(){
+					public static void main(String[] args){
+						MusicoEstudiante musico1 = new MusicoEstudiante();
+						
+						musico1.hablar(); // imprimira Estoy hablado español
+						musico1.estudiar(); // Imprimira Estoy Estudiando Programacion
+						musico1.tocar(); // Impimira Estoy Tocando La Guitarra
+						}
+					}
+	
 
 ---------------------------------------------------  Clases y Metodos Final
 	

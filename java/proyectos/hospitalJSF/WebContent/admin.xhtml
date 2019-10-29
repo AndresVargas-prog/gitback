@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<meta charset="UTF-8" />
+<title>Bienvenido</title>
+</head>
+	<h:body>
+	
+		<h:form>
+			<h3 align="center"> Bienvenido Doctor@ #{doctor.nombre} A su Hospital Niños Heroes</h3>
+			<h4 align="center">#{doctor.fecha}</h4>
+			<table>
+				<tr><td>Hoy tiene pendiente 4 consultas:</td></tr>
+				   <tr><td></td><td>* Josefa Ortiz, 67 años, fractura en la columna, pide Radiografia.</td></tr>
+				   <tr><td></td><td>* Luis Felipe Gomez, 26 años, rodilla fracturada, Rayos-X.</td></tr>
+				   <tr><td></td><td>* Luisa Fernanda Quirorte, 23, Presion baja.</td></tr><tr></tr><tr></tr>
+				   <tr><td></td><td>* Ramon VillaMaria Huerta, 79 años, Dolor en la columna vertebral.</td></tr>	
+				  			
+				<tr><td></td><td align="center"><h:commandButton action="cerrar" value="Cerrar Sesion" /><p></p><h:commandButton action="#{doctor.getConsulta()}" value="Modificar" /></td></tr>
+			</table>
+		</h:form>
+	</h:body>
+</html>

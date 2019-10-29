@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<meta charset="UTF-8" />
+<title>Registro</title>
+</head>
+	<h:body>
+		<h2>Registro De Doctores</h2>
+		<h:form>
+			<h:panelGrid columns="3" >
+
+				<h:outputLabel for="txtNombre" value="Nombre: " />
+				<h:inputText id="txtNombre" label="Ingresa Nombre" required="true"
+					value="#{doctor.nombre}" />
+				<h:message for="txtNombre" />
+				
+				<h:outputLabel for="txtEdad" value="Edad: " />
+				<h:inputText id="txtEdad" label="Ingresa Edad" required="true"
+					value="#{doctor.edad}" />
+
+				<!-- sexo caso especial -->
+				<h:outputLabel for="radiosexo" value="Sexo: " />
+				<h:selectOneRadio id="radiosexo" required="true"
+					value="#{doctor.sexo}">
+					<!-- Indica donde se guardaran la opcion que elija ademas de mencinar que es un dato de multiple opcion -->
+					<f:selectItem itemLabel="Masculino" itemValue="M" />
+					<f:selectItem itemLabel="Femenino" itemValue="F" />
+				</h:selectOneRadio>
+				<h:message for="radiosexo" />
+
+				<h:outputLabel for="txtdireccion" value="direccion " />
+				<h:inputText id="txtdireccion" label="Ingresa direccion"
+					required="true" value="#{doctor.direccion}" />
+				<h:message for="txtdireccion" />
+
+				<h:outputLabel for="txtEspecialidad" value="Especialidad: " />
+				<h:inputText id="txtEspecialidad" label="Ingresa Especialidad"
+					required="true" value="#{doctor.especialidad}" />
+				<h:message for="txtEspecialidad" />
+
+				<h:outputLabel for="txtCorreo" value="Correo: " />
+				<h:inputText id="txtCorreo" label="Ingresa Correo" required="true"
+					value="#{doctor.correo}" />
+				<h:message for="txtCorreo" />
+
+				<h:outputLabel for="txtContrasena" value="Contraseña: " />
+				<h:inputSecret id="txtContrasena" label="Ingresa Contraseña"
+					required="true" value="#{doctor.contrasena}" />
+				<h:message for="txtContrasena" />
+				
+				<h:commandButton action="#{doctor.getRegistro()}" value="Registrar" />
+				
+			</h:panelGrid>
+		</h:form>
+	</h:body>
+</html>

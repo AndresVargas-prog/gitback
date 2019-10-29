@@ -1,0 +1,40 @@
+ï»¿
+Nombre: andres vargas
+Edad: 23
+Sexo: Hombre
+Direccion: juanito camelas
+Especialidad: nutriologo
+E-mail: andres12@gmail.com
+Contraseña: 1qazxsw2
+
+Nombre: Karla BuenRostro
+Edad: 34
+Sexo: Mujer
+Direccion: VillaHermosa
+Especialidad: Logistica
+E-mail: karla11@gmail.com
+Contraseña: 12qwas
+
+Nombre: Luisa Fernandez
+Edad: 32
+Sexo: Mujer
+Direccion: popocatepetl 223
+Especialidad: Laboritarista
+E-mail: luisa443@hotmail.com
+Contraseña: vamos con todo
+
+Nombre: Juan Perez
+Edad: 32
+Sexo: Hombre
+Direccion: Lomas de VillaHermosa
+Especialidad: Medicina
+E-mail: juan32@gmail.com
+Contraseña: 1234qwer
+
+Nombre: Julio Hernandez
+Edad: 34
+Sexo: Hombre
+Direccion: villas de San Jasinto
+Especialidad: Dermatologo
+E-mail: julio443@gmail.com
+Contraseña: 12345

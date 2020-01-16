@@ -1,2 +1,2 @@
 # gitback
-Programador de mente abierta dispuesto a aprender diferentes ambitos de la programacion.
+Programador Junior, En constante crecimiento, Conociendo diferentes ambitos de la Programacion, asi como los diferentes lenguajes que esta nos proporciona.
